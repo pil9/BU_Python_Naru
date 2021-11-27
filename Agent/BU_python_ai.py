@@ -1,4 +1,5 @@
 from konlpy.tag import Kkma
+import sqlite3
 '''
 [('겨울', 'NNG') - >일반명사
  ('에', 'JKM'),
@@ -24,7 +25,8 @@ class TripAnalyzer:
         self.model = None
         self.sentence = str()
         self.result = list()
-
+        self.analyzed = dict()
+        self.tag_index = dict()
     '''Set to model with initial'''
     def set_model(self):
         self.model = Kkma()
@@ -53,9 +55,76 @@ class TripAnalyzer:
                 VA_list.append(task[0])
 
             elif task[1] == 'ETD':
-                #관형사형 전성어미 << 뭐여 -_-
+                #관형사형 전성어미
                 ETD_list.append(task[0])
 
             else:
                 continue
-        return dict
+        
+        self.analyzed = dict(
+            NNG=NNG_list,
+            VA=VA_list,
+            ETD=ETD_list
+        )
+            
+        return self.analyzed
+
+    def lookup_db_index(self):
+        conn = sqlite3.connect("place.db")
+        cur = conn.cursor()
+        cur.execute('select 번호, 태그 from info')
+        tag_index = cur.fetchall()
+        for index in tag_index:
+            try:
+                self.tag_index[index[0]] = index[1].split(',')
+            except AttributeError:
+                self.tag_index[index[0]] = ['테스트']
+            # self.tag_index[num][1] = index[1].split(',')
+
+        conn.close()
+        return self.tag_index
+
+    def lookup_db_data(self, index):
+        conn = sqlite3.connect("place.db")
+        cur = conn.cursor()
+        cur.execute("select * from info where 번호==?", [index])
+        data = cur.fetchone()
+        
+        return dict(
+            name = data[1],
+            full_addr = data[2],
+            info = data[3],
+            image = data[4],
+            short_addr = data[5],
+            tag = data[6].split(',')
+        )
+        
+    def recommand_analyzing(self):
+        ''''''
+        match_cnt = 0
+        last_match_cnt = 0
+        last_match_index = 0
+        for index in self.tag_index:
+            for tag in self.analyzed['NNG']:
+                if tag in self.tag_index[index]:
+                    match_cnt +=1
+            if last_match_cnt <= match_cnt:
+                last_match_cnt = match_cnt
+                last_match_index = index
+            match_cnt = 0
+        print(type(last_match_index))
+        return last_match_index
+
+
+engine = TripAnalyzer()
+engine.set_model()
+engine.set_sentence("겨울에 낚시하러 갈만한 여행지")
+engine.run_model()
+test = engine.result_analyzing()
+test = engine.lookup_db_index()
+test = engine.recommand_analyzing()
+data = engine.lookup_db_data(test)
+print(type(data))
+print(data)
+
+# print(test)

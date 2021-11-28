@@ -27,12 +27,11 @@ class TripAnalyzer:
         self.result = list()
         self.analyzed = dict()
         self.tag_index = dict()
-    
-    '''Set to model with initial(모델 설정 및 초기화)'''
+    '''Set to model with initial'''
     def set_model(self):
         self.model = Kkma()
 
-    '''Input to user sentence about trip(사용자 문장 설정)'''
+    '''Input to user sentence about trip'''
     def set_sentence(self, user_string):
         self.sentence = user_string
 
@@ -40,7 +39,7 @@ class TripAnalyzer:
     def run_model(self):
         self.result = self.model.pos(self.sentence)
 
-    '''Morphological classification by list(문장 분석)'''
+    '''Morphological classification by list'''
     def result_analyzing(self):
         NNG_list = list()
         VA_list = list()
@@ -70,7 +69,6 @@ class TripAnalyzer:
             
         return self.analyzed
 
-    '''DB 인덱스 생성'''
     def lookup_db_index(self):
         conn = sqlite3.connect("place.db")
         cur = conn.cursor()
@@ -80,27 +78,31 @@ class TripAnalyzer:
             try:
                 self.tag_index[index[0]] = index[1].split(',')
             except AttributeError:
-                self.tag_index[index[0]] = ['']
+                self.tag_index[index[0]] = ['테스트']
+            # self.tag_index[num][1] = index[1].split(',')
+
         conn.close()
         return self.tag_index
 
-    '''DB 데이터 조회'''
     def lookup_db_data(self, index):
         conn = sqlite3.connect("place.db")
         cur = conn.cursor()
         cur.execute("select * from info where 번호==?", [index])
         data = cur.fetchone()
-        conn.close()
+
+        tag_label=""
+        for tag in data[6].split(','):
+            tag_label += '#'+tag+' '
+
         return dict(
             name = data[1],
             full_addr = data[2],
             info = data[3],
             image = data[4],
             short_addr = data[5],
-            tag = data[6].split(',')
+            tag = tag_label
         )
-    
-    '''추천 여행지 분석'''
+        
     def recommand_analyzing(self):
         ''''''
         match_cnt = 0
@@ -114,19 +116,19 @@ class TripAnalyzer:
                 last_match_cnt = match_cnt
                 last_match_index = index
             match_cnt = 0
-        print(type(last_match_index))
+        # print(type(last_match_index))
         return last_match_index
 
 
-engine = TripAnalyzer()
-engine.set_model()
-engine.set_sentence("겨울에 낚시하러 갈만한 여행지")
-engine.run_model()
-test = engine.result_analyzing()
-test = engine.lookup_db_index()
-test = engine.recommand_analyzing()
-data = engine.lookup_db_data(test)
-print(type(data))
-print(data)
+# engine = TripAnalyzer()
+# engine.set_model()
+# engine.set_sentence("겨울에 낚시하러 갈만한 여행지")
+# engine.run_model()
+# test = engine.result_analyzing()
+# test = engine.lookup_db_index()
+# test = engine.recommand_analyzing()
+# data = engine.lookup_db_data(test)
+# print(type(data))
+# print(data)
 
 # print(test)

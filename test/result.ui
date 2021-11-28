@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(https://www.lottehotel.com/content/dam/lotte-hotel/lotte/jeju/overview/introduction/g-0807.jpg);
+background-size: 500px;
+background-color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <property name="leftMargin">
+      <number>120</number>
+     </property>
+     <property name="topMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>120</number>
+     </property>
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>G마켓 산스 TTF Medium</family>
+           <pointsize>16</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background: rgb(0,0,0,0);</string>
+         </property>
+         <property name="text">
+          <string>추천하는 여행지</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>G마켓 산스 TTF Bold</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background: rgb(0,0,0,0);</string>
+         </property>
+         <property name="text">
+          <string>'제주도'</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QGraphicsView" name="graphicsView">
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGraphicsView" name="graphicsView_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGraphicsView" name="graphicsView_4">
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGraphicsView" name="graphicsView_3">
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>G마켓 산스 TTF Medium</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #0099FF; 
+background: rgb(0,0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>#힐링 #비행기 #바다 #청량</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="maximumSize">
+        <size>
+         <width>800</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Noto Sans KR Regular</family>
+         <pointsize>12</pointsize>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">line-height: 20px;
+background: rgb(0,0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>제주시 애월읍 납읍리 마을에 인접하여 일만여 평에 이르는 넓은 면적에 속칭 &quot;금산공원&quot;이라 불리는 곳에 울창한 상록수림이 있다. 이곳이 자연림의 원형을 보존하고 있는 표본지역으로 원식생 연구에 기초적인 자료를 제공하고 있기 때문에 학술자원으로서 가치가 높아 문화재보호법으로 천연기념물로 지정, 보호되고 있는 납읍 난대림지대이다. 이곳은 제주시의 서부 지구에서 평지에 남아있는 유일한 상록수림으로 상록교목 및 60여종의 난대성 식물이 자라고 있으며, 원시적 경관이 그대로 보존되고 있어 수목가지의 절취, 식물 채취 행위 및 야생동물의 포획 등 자연을 손상시키는 행위가 일체 금지되고 있다.</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="otherbtn">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 17px;
+background-color: #F6F6F6;</string>
+         </property>
+         <property name="text">
+          <string>다른 여행지 보기</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="trafficbtn">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 17px;
+background-color: #F6F6F6;</string>
+         </property>
+         <property name="text">
+          <string>교통편 찾아보기</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="roombtn">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 17px;
+background-color: #F6F6F6;</string>
+         </property>
+         <property name="text">
+          <string>숙박 찾아보기</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>1</y>
+      <width>851</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: url(&quot;images/jeju2.png&quot;);
+background-repeat: no-repeat;
+        background-position: center center;</string>
+    </property>
+   </widget>
+   <zorder>graphicsView_5</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder></zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

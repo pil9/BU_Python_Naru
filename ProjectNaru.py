@@ -112,7 +112,9 @@ class OptionWindow3(QMainWindow):
         engine.lookup_db_index()
         index=engine.recommand_analyzing()
         result=engine.lookup_db_data(index)
-
+        
+        for line in result.items():
+            print(line)
         #Pixmap사용
         self.qPixmapFileVar = QPixmap()
 

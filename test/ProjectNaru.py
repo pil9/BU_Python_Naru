@@ -124,6 +124,7 @@ class OptionWindow3(QMainWindow):
         url=result['image']
         image=urllib.request.urlopen(url).read()
         self.qPixmapFileVar.loadFromData(image)
+        self.qPixmapFileVar = self.qPixmapFileVar.scaledToWidth(600)
         self.labelpic.setPixmap(self.qPixmapFileVar)
 
         #상단바 이름+아이콘 설정

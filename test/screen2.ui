@@ -58,8 +58,8 @@ background: rgb(0,0,0,0);</string>
      <rect>
       <x>120</x>
       <y>140</y>
-      <width>601</width>
-      <height>271</height>
+      <width>600</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="styleSheet">

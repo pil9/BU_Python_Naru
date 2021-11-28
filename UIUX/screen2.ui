@@ -19,42 +19,6 @@ background-size: 500px;
 background-color: white;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="infolabel">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>470</y>
-      <width>611</width>
-      <height>168</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>800</width>
-      <height>400</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <family>Noto Sans KR Medium</family>
-      <pointsize>12</pointsize>
-      <kerning>true</kerning>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">line-height: 20px;
-background: rgb(0,0,0,0);</string>
-    </property>
-    <property name="text">
-     <string>제주시 애월읍 납읍리 마을에 인접하여 일만여 평에 이르는 넓은 면적에 속칭 &quot;금산공원&quot;이라 불리는 곳에 울창한 상록수림이 있다. 이곳이 자연림의 원형을 보존하고 있는 표본지역으로 원식생 연구에 기초적인 자료를 제공하고 있기 때문에 학술자원으로서 가치가 높아 문화재보호법으로 천연기념물로 지정, 보호되고 있는 납읍 난대림지대이다. 이곳은 제주시의 서부 지구에서 평지에 남아있는 유일한 상록수림으로 상록교목 및 60여종의 난대성 식물이 자라고 있으며, 원시적 경관이 그대로 보존되고 있어 수목가지의 절취, 식물 채취 행위 및 야생동물의 포획 등 자연을 손상시키는 행위가 일체 금지되고 있다.</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="taglabel">
     <property name="geometry">
      <rect>
@@ -210,7 +174,7 @@ background-color: #F6F6F6;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>270</x>
       <y>50</y>
       <width>146</width>
       <height>37</height>
@@ -244,7 +208,7 @@ background: rgb(0,0,0,0);</string>
    <widget class="QLabel" name="namelabel">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>430</x>
       <y>50</y>
       <width>261</width>
       <height>37</height>
@@ -316,9 +280,104 @@ background: rgb(0,0,0,0);</string>
      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
     </property>
    </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>470</y>
+      <width>601</width>
+      <height>164</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255,0.2);
+border:0 solid black;</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>584</width>
+       <height>234</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="infolabel">
+        <property name="maximumSize">
+         <size>
+          <width>800</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans KR Medium</family>
+          <pointsize>12</pointsize>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">line-height: 20px;
+background: rgb(255,255,255,0.15);</string>
+        </property>
+        <property name="text">
+         <string>제주시 애월읍 납읍리 마을에 인접하여 일만여 평에 이르는 넓은 면적에 속칭 &quot;금산공원&quot;이라 불리는 곳에 울창한 상록수림이 있다. 이곳이 자연림의 원형을 보존하고 있는 표본지역으로 원식생 연구에 기초적인 자료를 제공하고 있기 때문에 학술자원으로서 가치가 높아 문화재보호법으로 천연기념물로 지정, 보호되고 있는 납읍 난대림지대이다. 이곳은 제주시의 서부 지구에서 평지에 남아있는 유일한 상록수림으로 상록교목 및 60여종의 난대성 식물이 자라고 있으며, 원시적 경관이 그대로 보존되고 있어 수목가지의 절취, 식물 채취 행위 및 야생동물의 포획 등 자연을 손상시키는 행위가 일체 금지되고 있다. daㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="userlabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>141</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>G마켓 산스 TTF Medium</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background: rgb(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>OOO님께</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+    </property>
+   </widget>
    <zorder>bgimg</zorder>
    <zorder>labelpic</zorder>
-   <zorder>infolabel</zorder>
    <zorder>taglabel</zorder>
    <zorder>trafficbtn_2</zorder>
    <zorder>roombtn_2</zorder>
@@ -326,6 +385,8 @@ background: rgb(0,0,0,0);</string>
    <zorder>label_3</zorder>
    <zorder>namelabel</zorder>
    <zorder>addlabel</zorder>
+   <zorder>scrollArea</zorder>
+   <zorder>userlabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

@@ -54,9 +54,9 @@ background: rgb(0,0,0,0);</string>
    <widget class="QLineEdit" name="textstart">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>270</x>
       <y>430</y>
-      <width>511</width>
+      <width>281</width>
       <height>51</height>
      </rect>
     </property>
@@ -70,7 +70,7 @@ background: rgb(0,0,0,0);</string>
      <string notr="true">background-color: rgb(0,0,0,0);</string>
     </property>
     <property name="maxLength">
-     <number>40</number>
+     <number>10</number>
     </property>
     <property name="frame">
      <bool>false</bool>
@@ -82,9 +82,9 @@ background: rgb(0,0,0,0);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>180</x>
       <y>300</y>
-      <width>591</width>
+      <width>501</width>
       <height>100</height>
      </rect>
     </property>
@@ -103,21 +103,21 @@ background: rgb(0,0,0,0);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background: rgb(0,0,0,0.1);</string>
+     <string notr="true">background: rgb(255,255,255,0.15);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;반복되는 일상에 지친 당신은 오랜만에 여행을 떠나기로 결심합니다.&lt;br/&gt;표를 예매하려면 우선 로그인을 해야겠죠.&lt;br/&gt;당신의 이름은…&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;  반복되는 일상에 지친 당신은 오랜만에 여행을 떠나기로 결심합니다.&lt;br/&gt;  표를 예매하려면 우선 로그인을 해야겠죠.&lt;br/&gt;  당신의 이름은…&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>240</x>
       <y>430</y>
-      <width>611</width>
+      <width>381</width>
       <height>51</height>
      </rect>
     </property>
@@ -149,7 +149,7 @@ padding:5px</string>
    <widget class="QPushButton" name="nextbtn">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>570</x>
       <y>440</y>
       <width>31</width>
       <height>31</height>

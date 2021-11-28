@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>310</y>
       <width>611</width>
       <height>120</height>
@@ -41,8 +41,9 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #c8c8c8;
-background: rgb(0,0,0,0);</string>
+     <string notr="true">color: #6C6C6C;
+background: rgb(255,255,255,0.15);
+margin-left:20px;</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;몇 명과 어디로 얼마나 여행을 떠나고 싶나요?&lt;/p&gt;&lt;p&gt;예시)&lt;br/&gt;- 바다가 보이거나 산이 있거나 넓은 초원이 있는 곳&lt;br/&gt;- 바다, 에메랄드, 횟집, 모래사장&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -102,9 +103,9 @@ padding:5px</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>280</x>
       <y>260</y>
-      <width>611</width>
+      <width>441</width>
       <height>51</height>
      </rect>
     </property>
@@ -228,6 +229,54 @@ padding:5px</string>
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="bgimg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>850</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userlabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>260</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>999</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>G마켓 산스 TTF Medium</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background: rgb(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>OOO님의</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <zorder>bgimg</zorder>
    <zorder>pushButton</zorder>
    <zorder>textlong</zorder>
    <zorder>label_3</zorder>
@@ -236,6 +285,7 @@ padding:5px</string>
    <zorder>label_2</zorder>
    <zorder>lineEdit_4</zorder>
    <zorder>nextbtn</zorder>
+   <zorder>userlabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

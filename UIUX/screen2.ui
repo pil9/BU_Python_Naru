@@ -274,7 +274,7 @@ background: rgb(0,0,0,0);</string>
 background: rgb(0,0,0,0);</string>
     </property>
     <property name="text">
-     <string>주소~</string>
+     <string>제주도 애월읍 납읍리</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>

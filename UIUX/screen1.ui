@@ -96,7 +96,7 @@ background: rgb(0,0,0,0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>

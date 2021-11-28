@@ -116,7 +116,7 @@ background: rgb(0,0,0,0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -173,7 +173,7 @@ background: rgb(0,0,0,0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -196,7 +196,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -219,7 +219,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -242,7 +242,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -265,7 +265,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -288,7 +288,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -311,7 +311,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -334,7 +334,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -357,7 +357,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -380,7 +380,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -403,7 +403,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -426,7 +426,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -449,7 +449,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -472,7 +472,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -495,7 +495,7 @@ border-radius:25px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Noto Sans KR Bold</family>
+      <family>Noto Sans KR Medium</family>
       <pointsize>12</pointsize>
      </font>
     </property>

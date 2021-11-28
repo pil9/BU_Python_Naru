@@ -60,23 +60,42 @@ class OptionWindow2(QMainWindow):
         uic.loadUi(option_ui, self)
         self.show()
         
-        self.textimage.setPlaceholderText("ex - 여행, 가방, 배낭여행, 면세점")
-        self.nextbtn.clicked.connect(self.clicked_option)
+        # self.textimage.setPlaceholderText("ex - 여행, 가방, 배낭여행, 면세점")
         # self.qPixmapFileVar = QPixmap()
         # self.qPixmapFileVar.load("images/image.png")
         # self.labelpic.setPixmap(self.qPixmapFileVar)
 
-
+        
         self.userlabel.setText(username+"님은")
+
+        #지역 버튼 클릭 시 다음 페이지로 이동
+        self.pushButton_2.clicked.connect(self.clicked_option)
+        self.pushButton_3.clicked.connect(self.clicked_option)
+        self.pushButton_4.clicked.connect(self.clicked_option)
+        self.pushButton_5.clicked.connect(self.clicked_option)
+        self.pushButton_6.clicked.connect(self.clicked_option)
+        self.pushButton_7.clicked.connect(self.clicked_option)
+        self.pushButton_8.clicked.connect(self.clicked_option)
+        self.pushButton_9.clicked.connect(self.clicked_option)
+        self.pushButton_10.clicked.connect(self.clicked_option)
+        self.pushButton_11.clicked.connect(self.clicked_option)
+        self.pushButton_12.clicked.connect(self.clicked_option)
+        self.pushButton_13.clicked.connect(self.clicked_option)
+        self.pushButton_14.clicked.connect(self.clicked_option)
+        self.pushButton_15.clicked.connect(self.clicked_option)
+        self.pushButton_16.clicked.connect(self.clicked_option)
+        self.pushButton_17.clicked.connect(self.clicked_option)
+
+
 
         #상단바 이름+아이콘 설정
         self.setWindowTitle('나루')
         self.setWindowIcon(QIcon('images/luggage.png'))
         
     def clicked_option(self):
-        global image
-        image = self.textimage.text()
-        print(image)
+        # global image
+        # image = self.textimage.text()
+        # print(image)
         OptionWindow3(self)
 
 

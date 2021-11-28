@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>210</y>
+      <y>180</y>
       <width>611</width>
       <height>100</height>
      </rect>
@@ -45,7 +45,7 @@
 background: rgb(0,0,0,0);</string>
     </property>
     <property name="text">
-     <string>나루</string>
+     <string>NARU(나루)</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -55,7 +55,7 @@ background: rgb(0,0,0,0);</string>
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>430</y>
+      <y>470</y>
       <width>281</width>
       <height>51</height>
      </rect>
@@ -83,7 +83,7 @@ background: rgb(0,0,0,0);</string>
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>300</y>
+      <y>320</y>
       <width>501</width>
       <height>100</height>
      </rect>
@@ -116,7 +116,7 @@ background: rgb(0,0,0,0);</string>
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>430</y>
+      <y>470</y>
       <width>381</width>
       <height>51</height>
      </rect>
@@ -150,7 +150,7 @@ padding:5px</string>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>440</y>
+      <y>480</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -162,12 +162,47 @@ padding:5px</string>
      <string>▶</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>220</y>
+      <width>611</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>999</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>G마켓 산스 TTF Medium</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">line-height: 20px;
+background: rgb(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>나의 여행을 책임질 맞춤형 플래너</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <zorder>labelpic</zorder>
    <zorder>pushButton</zorder>
    <zorder>label_2</zorder>
    <zorder>textstart</zorder>
    <zorder>label_3</zorder>
    <zorder>nextbtn</zorder>
+   <zorder>label_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
